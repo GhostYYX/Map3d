@@ -39,6 +39,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="夜间模式"/>
+
+                <Button
+                    android:id="@+id/button_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获取屏幕中心的位置信息"/>
             </LinearLayout>
         </HorizontalScrollView>
 

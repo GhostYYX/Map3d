@@ -1,5 +1,6 @@
 package com.yyx.map3d;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -8,6 +9,7 @@ import com.amap.api.maps.AMap;
 import com.amap.api.maps.CameraUpdateFactory;
 import com.amap.api.maps.MapView;
 import com.amap.api.maps.model.LatLng;
+import com.yyx.map3d.activity.GetDateActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -51,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 aMap.setMapType(AMap.MAP_TYPE_NIGHT);// 夜间地图模式
+            }
+        });
+
+        findViewById(R.id.button_4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, GetDateActivity.class));
             }
         });
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.amap.api.maps.MapView>
+        <ImageView
+            android:id="@+id/content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ding_wei_s"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:id="@+id/ll"
+            android:visibility="gone"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:background="@drawable/manager_xin"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="25dp"
+            android:paddingTop="18dp"
+            android:paddingRight="20dp">
+            <TextView
+                android:id="@+id/j"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="经度："
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/w"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:maxLines="1"
+                android:text="经度："/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
